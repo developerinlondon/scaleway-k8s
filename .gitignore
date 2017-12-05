@@ -3,3 +3,4 @@ fetch
 terraform/*.tfstate
 terraform/*.tfstate.backup
 terraform/.terraform/
+group_vars/vaulted.yml
