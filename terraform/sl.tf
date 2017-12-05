@@ -5,7 +5,6 @@ terraform {
     bucket         = "sds-dev-terraform"
     key            = "terraform/dev.tfstate"
     region         = "eu-west-2"
-    dynamodb_table = "sds-dev-terraform"
   }
 }
 // Remote state for dns config
@@ -16,7 +15,6 @@ data "terraform_remote_state" "aws_account" {
     bucket         = "sds-dev-terraform"
     key            = "terraform/dev.tfstate"
     region         = "eu-west-2"
-    dynamodb_table = "sds-dev-terraform"
   }
 }
 provider "scaleway" {
